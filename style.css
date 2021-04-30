@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	background: black;
+	padding: 20px 30px;
+	
+	position: fixed;
+	left: 0;
+	right: 0;
+
+	background: rgba(0, 0, 0, 0.4);
+	
+	z-index: 2;
+}
+header .header_content {
+	flex: 1;
+}
+
+header .left h2{
+	color: white;
+}
+
+header .right ul {
+	list-style: none;
+	text-align: right;
+	
+}
+header .right ul li {
+	display: inline-block;
+	padding: 5px 20px;
+	padding-right: 0;
+}
+header .right ul li a {
+	color: white;
+	text-decoration: none;
+}
+header .right ul li a i{
+	color: white;
+}
+
+
+/* HERO SECTION */
+#hero {
+	background: url('bg.jpg');
+	background-size: cover;
+	color: white;
+	min-height: 90vh; /* VH -> Viewport Height */
+	display: flex;
+	
+	flex-direction: row;
+	
+	justify-content: center;
+	align-items: center;
+	
+	font-family: cursive;
+	font-size: 2rem;
+	
+	position: relative;
+	
+	z-index: 1;
+}
+
+#hero::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: black;
+	opacity: 0.4;
+	
+	height: 100%;
+	width: 100%;
+	
+	z-index: 200;
+}
+
+#hero h2 {
+	z-index: 300;
+	padding: 50px;
+}
+
+
+#test {
+	height: 200px;
+	width: 200px;
+	background: red;
+	margin: 80px auto;
+	border-radius: 10px;
+	box-shadow: 20px 20px 0px rgba(255,0,0,0.4);
+}
+
+
+footer {
+	text-align: center;
+	background: black;
+	color: white;
+	padding: 16px 0;
+}

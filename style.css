@@ -86,13 +86,23 @@ header .right ul li a i{
 
 
 #test {
-	height: 200px;
-	width: 200px;
-	background: red;
-	margin: 80px auto;
-	border-radius: 10px;
-	box-shadow: 20px 20px 0px rgba(255,0,0,0.4);
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
 }
+#test .card {
+	flex: 1;
+	margin: 20px;
+	padding: 20px;
+	box-shadow: 5px 5px 30px rgba(0,0,0,.6);
+}
+
+@media screen and (max-width: 800px) {
+  #test {
+	  flex-direction: column;
+  }
+}
+
 
 
 footer {

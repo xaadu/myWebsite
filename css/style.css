@@ -45,7 +45,7 @@ header .right ul li a i{
 
 /* HERO SECTION */
 #hero {
-	background: url('bg.jpg');
+	background: url('../images/bg.jpg');
 	background-size: cover;
 	color: white;
 	min-height: 90vh; /* VH -> Viewport Height */
@@ -85,24 +85,9 @@ header .right ul li a i{
 }
 
 
-#test {
-	padding: 50px;
-	display: flex;
-	flex-direction: row;
+#perfectSlider .mainSlider .slide img {
+	width: 100%;
 }
-#test .card {
-	flex: 1;
-	margin: 20px;
-	padding: 20px;
-	box-shadow: 5px 5px 30px rgba(0,0,0,.6);
-}
-
-@media screen and (max-width: 800px) {
-  #test {
-	  flex-direction: column;
-  }
-}
-
 
 
 footer {
